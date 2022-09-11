@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edgar's Card Game Project</title>
+</head>
+
+<script src="wargame.js"></script>
+
+<style>
+    .players {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+
+</style>
+
+<body>
+
+    <header>War Playing Card Game</header>
+♥
+♠
+♦
+♣
+
+    <section class="players">
+        <div>
+            <div class="playertitle">Dealer</div>
+            <div class="score" id="dealerscore"></div>
+            
+            <div class="card">
+                <div>
+                    <label class="cardnum" id="dealercardnum"></label>
+                    <label class="char" id="dealerchar"></label>
+                </div>
+                <label id="dealerbigchar" class="bigchar" ></label>
+            </div>
+
+        </div>
+
+        <div>
+            <div class="playertitle">User</div> 
+            <div class="score" id="userscore"></div>
+
+            <div class="card">
+                <div>
+                <label class="cardnum" id="usercardnum"></label>
+                <label class="char" id="userchar"></label>
+                </div>
+                <label id="userbigchar" class="bigchar" ></label>
+            </div>
+
+        </div>
+    </section>
+
+    <input type="button" value="Next Turn" onclick="deckcards();">
+
+
+
+ 
+</body>
+</html>
